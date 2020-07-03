@@ -15,6 +15,7 @@ namespace Codenation.Challenge.Models
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfiguration(new CompanyMapping());
+            modelBuilder.ApplyConfiguration(new ChallengeMapping());
         }
     }
 }
