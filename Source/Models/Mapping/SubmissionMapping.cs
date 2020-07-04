@@ -16,6 +16,12 @@ namespace Source.Models.Mapping
 
             builder.Property(s => s.CreatedAt)
                 .IsRequired();
+
+            builder.HasOne(s => s.User)
+                .WithMany(u => u.Submissions);
+
+            builder.HasOne(s => s.Challenge)
+                .WithMany(c => c.Submissions);
         }
     }
 }

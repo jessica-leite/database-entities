@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Source.Models
 {
@@ -11,5 +12,6 @@ namespace Source.Models
 
         public int ChallengeId { get; set; }
         public Challenge Challenge { get; set; }
+        public IEnumerable<Candidate> Candidates { get; set; }
     }
 }

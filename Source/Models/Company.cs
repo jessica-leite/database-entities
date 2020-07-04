@@ -1,7 +1,6 @@
+using Source.Models;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Codenation.Challenge.Models
 {
@@ -11,5 +10,7 @@ namespace Codenation.Challenge.Models
         public string Name { get; set; }
         public string Slug { get; set; }
         public DateTime CreatedAt { get; set; }
+
+        public IEnumerable<Candidate> Candidates { get; set; }
     }
 }

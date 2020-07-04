@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Source.Models
 {
@@ -10,5 +11,8 @@ namespace Source.Models
         public string NickName { get; set; }
         public string Password { get; set; }
         public DateTime CreatedAt { get; set; }
+
+        public IEnumerable<Submission> Submissions { get; set; }
+        public IEnumerable<Candidate> Candidates { get; set; }
     }
 }

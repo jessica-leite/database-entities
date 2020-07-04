@@ -11,5 +11,6 @@ namespace Source.Models
         public DateTime CreatedAt { get; set; }
 
         public IEnumerable<Acceleration> Accelerations { get; set; }
+        public IEnumerable<Submission> Submissions { get; set; }
     }
 }

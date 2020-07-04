@@ -19,6 +19,7 @@ namespace Codenation.Challenge.Models
             modelBuilder.ApplyConfiguration(new AccelerationMapping());
             modelBuilder.ApplyConfiguration(new UserMapping());
             modelBuilder.ApplyConfiguration(new SubmissionMapping());
+            modelBuilder.ApplyConfiguration(new CandidateMapping());
         }
     }
 }
