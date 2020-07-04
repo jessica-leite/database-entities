@@ -16,6 +16,7 @@ namespace Codenation.Challenge.Models
         {
             modelBuilder.ApplyConfiguration(new CompanyMapping());
             modelBuilder.ApplyConfiguration(new ChallengeMapping());
+            modelBuilder.ApplyConfiguration(new AccelerationMapping());
         }
     }
 }

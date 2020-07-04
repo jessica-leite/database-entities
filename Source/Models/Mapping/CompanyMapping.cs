@@ -8,7 +8,7 @@ namespace Source.Models.Mapping
     {
         public void Configure(EntityTypeBuilder<Company> builder)
         {
-            builder.ToTable("company");
+            builder.ToTable(nameof(Company).ToLower());
 
             builder.HasKey(c => c.Id);
 
