@@ -11,11 +11,23 @@ namespace Source.Models.Mapping
 
             builder.HasKey(c => new { c.UserId, c.AccelerationId, c.CompanyId });
 
+            builder.Property(c => c.UserId)
+                .HasColumnName("user_id");
+
+            builder.Property(c => c.AccelerationId)
+                .HasColumnName("acceleration_id");
+
+            builder.Property(c => c.CompanyId)
+                .HasColumnName("company_id");
+
             builder.Property(c => c.Status)
+                .HasColumnName("status")
                 .IsRequired();
 
             builder.Property(c => c.CreatedAt)
+                .HasColumnName("created_at")
                 .IsRequired();
+
 
             builder.HasOne(c => c.User)
                 .WithMany(u => u.Candidates);

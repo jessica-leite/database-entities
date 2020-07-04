@@ -11,11 +11,20 @@ namespace Source.Models.Mapping
 
             builder.HasKey(s => new { s.UserId, s.ChallengeId });
 
+            builder.Property(s => s.UserId)
+                .HasColumnName("user_id");
+
+            builder.Property(s => s.ChallengeId)
+                .HasColumnName("challege_id");
+
             builder.Property(s => s.Score)
+                .HasColumnName("score")
                 .IsRequired();
 
             builder.Property(s => s.CreatedAt)
+                .HasColumnName("created_at")
                 .IsRequired();
+
 
             builder.HasOne(s => s.User)
                 .WithMany(u => u.Submissions);
