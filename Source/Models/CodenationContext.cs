@@ -6,7 +6,7 @@ namespace Codenation.Challenge.Models
     public class CodenationContext : DbContext
     {
         public DbSet<Company> Companies { get; set; }
-                
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseSqlServer(@"Server=(localdb)\mssqllocaldb;Database=Codenation;Trusted_Connection=True");
@@ -18,6 +18,7 @@ namespace Codenation.Challenge.Models
             modelBuilder.ApplyConfiguration(new ChallengeMapping());
             modelBuilder.ApplyConfiguration(new AccelerationMapping());
             modelBuilder.ApplyConfiguration(new UserMapping());
+            modelBuilder.ApplyConfiguration(new SubmissionMapping());
         }
     }
 }
