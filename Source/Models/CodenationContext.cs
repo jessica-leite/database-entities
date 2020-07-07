@@ -1,13 +1,12 @@
+using Codenation.Challenge.Models.Mapping;
 using Microsoft.EntityFrameworkCore;
-using Source.Models;
-using Source.Models.Mapping;
 
 namespace Codenation.Challenge.Models
 {
     public class CodenationContext : DbContext
     {
         public DbSet<Company> Companies { get; set; }
-        public DbSet<Source.Models.Challenge> Challenges { get; set; }
+        public DbSet<Challenge> Challenges { get; set; }
         public DbSet<Acceleration> Accelerations { get; set; }
         public DbSet<User> Users { get; set; }
         public DbSet<Submission> Submissions { get; set; }

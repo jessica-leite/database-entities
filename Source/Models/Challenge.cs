@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Source.Models
+namespace Codenation.Challenge.Models
 {
     public class Challenge
     {

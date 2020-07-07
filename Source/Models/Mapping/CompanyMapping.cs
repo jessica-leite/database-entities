@@ -1,8 +1,7 @@
-﻿using Codenation.Challenge.Models;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace Source.Models.Mapping
+namespace Codenation.Challenge.Models.Mapping
 {
     public class CompanyMapping : IEntityTypeConfiguration<Company>
     {

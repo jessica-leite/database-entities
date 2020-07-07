@@ -1,7 +1,6 @@
-﻿using Codenation.Challenge.Models;
-using System;
+﻿using System;
 
-namespace Source.Models
+namespace Codenation.Challenge.Models
 {
     public class Candidate
     {

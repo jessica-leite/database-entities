@@ -1,5 +1,5 @@
 ﻿using System;
-namespace Source.Models
+namespace Codenation.Challenge.Models
 {
     public class Submission
     {

@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace Source.Models.Mapping
+namespace Codenation.Challenge.Models.Mapping
 {
     public class SubmissionMapping : IEntityTypeConfiguration<Submission>
     {
@@ -15,7 +15,7 @@ namespace Source.Models.Mapping
                 .HasColumnName("user_id");
 
             builder.Property(s => s.ChallengeId)
-                .HasColumnName("challege_id");
+                .HasColumnName("challenge_id");
 
             builder.Property(s => s.Score)
                 .HasColumnName("score")

@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace Source.Models.Mapping
+namespace Codenation.Challenge.Models.Mapping
 {
     public class AccelerationMapping : IEntityTypeConfiguration<Acceleration>
     {
